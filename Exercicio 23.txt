@@ -1,0 +1,15 @@
+using System;
+
+class Program {
+    static void Main(string[] args) {
+        int i;
+
+      for(i = 11; i <= 250; i++){
+
+        if(i % 2 == 0){
+
+          Console.WriteLine("{0} é par", i);
+        }
+      }
+    }
+}
