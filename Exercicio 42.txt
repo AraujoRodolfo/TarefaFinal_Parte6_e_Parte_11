@@ -1,0 +1,32 @@
+using System;
+
+    class Program    {
+        static void Main(string[] args)
+        {
+            int l = 3, c = 5;
+            int[,] matriz = new int[l, c];
+            int linha, coluna;
+            for (linha = 0; linha < l; linha++)
+            {
+                for (coluna = 0; coluna < c; coluna++)
+                {
+                    Console.Write("Linha {0} Coluna {1}: ", linha + 1, coluna + 1);
+                    matriz[linha, coluna] = int.Parse(Console.ReadLine());
+                }
+            }
+            for (linha = 0; linha < l; linha++)
+            {
+                for (coluna = 0; coluna < c; coluna++)
+                {
+            Console.Write(" {0} ", matriz[linha,coluna]);
+
+                }
+              Console.WriteLine();
+            }
+            for (linha = 0; linha < l; linha++){
+
+            Console.WriteLine("Soma da {0}° linha: {1}", linha + 1, matriz[0 + linha, 0] + matriz[0 + linha, 1] + matriz[0 + linha, 2] + matriz[0 + linha, 3] + matriz[0 + linha, 4]);
+              
+            }
+        }
+    }
