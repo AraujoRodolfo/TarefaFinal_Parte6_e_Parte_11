@@ -1,0 +1,35 @@
+using System;
+
+namespace Atividade36
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Informe a altura da pessoa");
+            double altura = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o sexo da pessoa sendo\nM = Masculino\nF = Feminino");
+            char sexo = Console.ReadKey().KeyChar;
+
+            calcularPesoIdeal(altura, sexo);
+
+        }
+        static void calcularPesoIdeal(double al, char sex)
+        {
+            double pesoM = 72.7 * al - 58;
+            double pesoF = 62.1 * al - 58;
+
+            if(sex == 'M')
+            {
+                Console.WriteLine("\nO peso ideal do Sexo Mascuino é {0}", pesoM);
+            }
+
+            if (sex == 'F')
+            {
+                Console.WriteLine("\nO peso ideal do Sexo Feminino é {0}", pesoF);
+            }
+        }
+    }
+}
